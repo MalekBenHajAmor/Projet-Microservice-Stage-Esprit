@@ -5,16 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38364aed-7e78-4199-a189-5ad7ddceff35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/microservices-resto-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/java/com/example/reservation/Controller/ReservationController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/java/com/example/reservation/Entity/Reservation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/java/com/example/reservation/Entity/User.java" afterDir="false" />
@@ -23,8 +13,7 @@
       <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/java/com/example/reservation/Service/ReservationService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/java/com/example/reservation/config/RabbitMQConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/user-ms/src/main/java/com/example/user/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend" beforeDir="false" afterPath="$PROJECT_DIR$/frontend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microServices-resto-app-SpringBoot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project" beforeDir="false" afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project/reservation-ms/src/main/resources/application.properties" afterDir="false" />
@@ -39,7 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/microServices-resto-app-SpringBoot/parent-project" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -53,8 +42,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Malek/Desktop/microservices-resto-app/microServices-resto-app-SpringBoot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1723470149479</updated>
       <workItem from="1723470151263" duration="1075000" />
+      <workItem from="1723475791313" duration="29000" />
     </task>
     <servers />
   </component>

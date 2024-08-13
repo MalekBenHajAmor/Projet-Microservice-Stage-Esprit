@@ -14,7 +14,7 @@ function Navbar() {
         <li><a href="#features" class="page-scroll">Specials</a></li>
         <li><a href="#about" class="page-scroll">About</a></li>
         <li><Link to="/" className="page-scroll">Home</Link></li>
-        <li><Link to="/login" className="page-scroll">Login</Link></li>
+        <li><Link to="/Sign_up" className="page-scroll">SignUp</Link></li>
       </ul>
     </div>
   </div>
