@@ -7,7 +7,7 @@ function Home() {
     <div>
 
     <Navbar/>
-    <Header/>
+    
 
     </div>
    

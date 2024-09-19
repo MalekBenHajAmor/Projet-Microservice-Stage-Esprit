@@ -3877,11 +3877,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
 }
 .nav > li {
-  position: relative;
+  position: sticky;
   display: block;
 }
 .nav > li > a {
-  position: relative;
+  position: sticky;
   display: block;
   padding: 10px 15px;
 }
@@ -4064,7 +4064,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: relative;
+  position: sticky;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
@@ -4192,7 +4192,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-toggle {
-  position: relative;
+  position: sticky;
   float: right;
   padding: 9px 10px;
   margin-top: 8px;

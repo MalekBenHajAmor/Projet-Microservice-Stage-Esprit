@@ -83,6 +83,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: inline-block;
 	float: none;
 	vertical-align: top;
+	
 }
 .navbar .navbar-collapse {
 	text-align: center;
@@ -200,6 +201,22 @@ header .intro-text {
 	padding-bottom: 50px;
 	text-align: center;
 }
+.order-button{
+	width: 50%; /* Full width of the parent element */
+    padding: 10px 20px; /* Add padding for better look */
+    font-size: 16px; /* Adjust font size */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.order-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
 /* Features Section */
 #features {
 	padding: 120px 0;
