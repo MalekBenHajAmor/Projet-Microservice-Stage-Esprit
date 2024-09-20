@@ -5,34 +5,60 @@ import com.example.user.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/users")
+@CrossOrigin(origins = "http://localhost:3000")
+
 public class UserController {
 
     @Autowired
     private UserService userService;
 
     @PostMapping("/signup")
-    public ResponseEntity<User> signUp(@RequestBody User user) {
+    public ResponseEntity<?> signUp(@RequestBody User user) {
         try {
             User newUser = userService.signUp(user);
             return new ResponseEntity<>(newUser, HttpStatus.CREATED);
         } catch (RuntimeException e) {
-            return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
+            Map<String, String> errorResponse = new HashMap<>();
+            errorResponse.put("error", e.getMessage());
+            return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
         }
     }
 
     @PostMapping("/signin")
-    public ResponseEntity<User> signIn(@RequestBody User loginUser) {
+    public ResponseEntity<?> signIn(@RequestBody User loginUser) {
         try {
-            User user = userService.signIn(loginUser.getUsername(), loginUser.getPassword());
+            if (loginUser.getEmail() == null || loginUser.getPassword() == null) {
+                Map<String, String> errorResponse = new HashMap<>();
+                errorResponse.put("error", "Email and password must be provided");
+                return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+            }
+
+            User user = userService.signIn(loginUser.getEmail(), loginUser.getPassword());
+
+            Authentication authentication = new UsernamePasswordAuthenticationToken(
+                    user.getEmail(),
+                    user.getPassword(),
+                    new ArrayList<>()
+            );
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+
             return new ResponseEntity<>(user, HttpStatus.OK);
         } catch (RuntimeException e) {
-            return new ResponseEntity<>(null, HttpStatus.UNAUTHORIZED);
+            Map<String, String> errorResponse = new HashMap<>();
+            errorResponse.put("error", e.getMessage());
+            return new ResponseEntity<>(errorResponse, HttpStatus.UNAUTHORIZED);
         }
     }
 

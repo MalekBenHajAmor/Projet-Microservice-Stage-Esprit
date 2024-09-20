@@ -1,4 +1,4 @@
-package com.example.user.Entity;
+package com.example.reservation.Entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -21,9 +21,6 @@ public class User {
     @NotEmpty(message = "Email is required")
     @Email(message = "Email should be valid")
     private String email;
-
-    @Column(nullable = false)
-    private String role = "client";  // Default role
 
     // Getters and setters
     public Long getId() {
@@ -56,13 +53,5 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 }
